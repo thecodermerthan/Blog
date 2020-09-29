@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "U6XahEiXVWL4gJ1U5xuD4yonyvUcqIOMjyYetnvmAjL+nOMoRWZNxig7iJ8PZqtJeBJED3Kfcx1mbY5inOr49Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\merth\\BlogFront\\BlogFront.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\merth\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
