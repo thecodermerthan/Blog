@@ -9,27 +9,30 @@ using Newtonsoft.Json;
 
 namespace BlogFront.Filters{
     public class JwtAuthorize : ActionFilterAttribute{
-        public override void OnActionExecuted(ActionExecutedContext context)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
             var token = context.HttpContext.Session.GetString("token");
 
-            if(string.IsNullOrWhiteSpace(token)){
-                context.Result = new RedirectToActionResult("SignIn","Account",new {@area=""});
-            }
-            else{
-                using var httpClient = new HttpClient();
-                httpClient.DefaultRequestHeaders.Authorization= new AuthenticationHeaderValue("Bearer",token);
-                var responseMessage = httpClient.GetAsync("http://localhost:49602/api/Auth/ActiveUser").Result;
-                if(responseMessage.IsSuccessStatusCode){
-                    var activeUser = JsonConvert.DeserializeObject<AppUserViewModel>
-                    (responseMessage.Content.ReadAsStringAsync().Result);
-                    
-                    context.HttpContext.Session.SetObject("activeUser",activeUser);
-                }
-                else{
-                    context.Result = new RedirectToActionResult("SignIn","Account",new {@area=""});
-                }
-            }
+             if(string.IsNullOrWhiteSpace(token)){
+                  context.Result = new RedirectToActionResult("SignIn","Account",new {@area=""});
+              }
+              else{
+                 using var httpClient = new HttpClient();
+
+                 httpClient.DefaultRequestHeaders.Authorization= new AuthenticationHeaderValue("Bearer",token);
+
+                  var responseMessage = httpClient.GetAsync("http://localhost:49602/api/Auth/ActiveUser").Result;
+
+                 if(responseMessage.IsSuccessStatusCode){
+                      var activeUser = JsonConvert.DeserializeObject<AppUserViewModel>(responseMessage.Content.ReadAsStringAsync().Result);
+
+                      context.HttpContext.Session.SetObject("activeUser",activeUser);
+                  }
+                  else{
+                      context.Result = new RedirectToActionResult("SignIn","Account",new {@area=""});
+                  }
+             }    //Admine singin ile ulaşım, yorum satırı kalkınca signin ile admine ulaşım koşulu gerekiyor
         }
+        
     }
 }

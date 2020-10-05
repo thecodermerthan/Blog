@@ -14481,6 +14481,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\merth\\BlogFront\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\merth\\BlogFront\\Areas\\Admin\\Views\\Blog\\index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Blog\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\merth\\BlogFront\\Views\\Account\\SignIn.cshtml",
       "TargetPath": "Views\\Account\\SignIn.cshtml",
       "FileKind": "mvc"
@@ -14488,6 +14498,11 @@
     {
       "FilePath": "c:\\Users\\merth\\BlogFront\\Areas\\Admin\\Views\\Home\\index.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Home\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\merth\\BlogFront\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14513,6 +14528,16 @@
     {
       "FilePath": "c:\\Users\\merth\\BlogFront\\Views\\Shared\\Components\\GetCategoryName\\default.cshtml",
       "TargetPath": "Views\\Shared\\Components\\GetCategoryName\\default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\merth\\BlogFront\\Areas\\Admin\\Views\\Blog\\create.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Blog\\create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\merth\\BlogFront\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {

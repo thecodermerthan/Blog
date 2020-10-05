@@ -35,6 +35,7 @@ namespace BlogFront
                 app.UseDeveloperExceptionPage();
             }
 
+
             app.UseRouting();
             app.UseSession();
             app.UseStaticFiles();
